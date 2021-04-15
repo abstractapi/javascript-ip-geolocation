@@ -1,5 +1,5 @@
 {
-  "name": "javascript-ip-geolocation",
+  "name": "@abstractapi/javascript-ip-geolocation",
   "version": "0.1.0",
   "description": "AbstractAPI Javascript IP Geolocation Library - Wrapper to quickly start using the powerful AbstractAPI's IP Geolocation service in your projects.",
   "main": "index.js",
@@ -10,14 +10,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abstractapi/javascript-ip-geolocation.git"
+    "url": "git+https://github.com/abstractapi/javascript-ip-geolocation.git"
   },
-  "keywords": ["abstract", "abstractapi", "api", "api", "geolocation", "geolocation", "geolocation-api", "geolocation-application", "geolocation-data", "geolocation-database", "geolocation-plugin", "ip", "ip geolocation", "ip-geo", "ip-geolocation", "ip-geolocation-api", "ip-geolocation-ip2location", "library", "javascript-library", "wrapper"],
-  "author": {
-    "name" : "Benjamin Bouchet",
-    "email" : "libraries@abstractapi.com",
-    "url" : "https://abstractapi.com/"
-  },
+  "keywords": [
+    "abstract",
+    "abstractapi",
+    "api",
+    "api",
+    "geolocation",
+    "geolocation",
+    "geolocation-api",
+    "geolocation-application",
+    "geolocation-data",
+    "geolocation-database",
+    "geolocation-plugin",
+    "ip",
+    "ip geolocation",
+    "ip-geo",
+    "ip-geolocation",
+    "ip-geolocation-api",
+    "ip-geolocation-ip2location",
+    "library",
+    "javascript-library",
+    "wrapper"
+  ],
+  "author": "Benjamin Bouchet <libraries@abstractapi.com> (https://abstractapi.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/abstractapi/javascript-ip-geolocation/issues"
@@ -37,6 +54,10 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "javascript-core": "https://github.com/abstractapi/javascript-core.git"
+    "@abstractapi/javascript-core": "0.x"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

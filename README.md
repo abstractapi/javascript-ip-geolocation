@@ -19,7 +19,7 @@ You can install **javascript-ip-geolocation** via npm, from our CDN, or download
 Download and install the library from npm:
 
 ```
-npm install javascript-ip-geolocation --save
+npm install @abstractapi/javascript-ip-geolocation --save
 ```
 
 In your project, import it and configure your `API_KEY`:
