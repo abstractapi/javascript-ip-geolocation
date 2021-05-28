@@ -38,7 +38,7 @@ You can have the browser download the library from its closest location through 
 <script src="https://cdn.jsdelivr.net/npm/@abstractapi/javascript-core@latest/dist/javascript-core.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@abstractapi/javascript-ip-geolocation@latest/dist/javascript-ip-geolocation.js"></script>
 <script>
-    AbstractEmailValidation.configure('API_KEY');
+    AbstractIpGeolocation.configure('API_KEY');
 
     // use the library
 </script>
