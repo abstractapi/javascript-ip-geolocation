@@ -1,26 +1,7 @@
 import 'regenerator-runtime/runtime';
 import {AbstractIpGeolocation} from '../src'
-const mocks = require('./mocks.js')
 
-function mockFetch(status, data) {
-    const xhrMockObj = {
-        open: jest.fn(),
-        send: jest.fn(),
-        setRequestHeader: jest.fn(),
-        onreadystatechange: jest.fn(),
-        readyState: 4,
-        status,
-        responseText: JSON.stringify(data),
-    };
-
-    const xhrMockClass = () => xhrMockObj;
-
-    global.XMLHttpRequest = jest.fn().mockImplementation(xhrMockClass);
-
-    setTimeout(() => {
-        xhrMockObj.onreadystatechange();
-    }, 0);
-}
+const API_KEY = process.env.IP_GEOLOCATION_API_KEY;
 
 test('Should throw error when no key is configured', () => {
     let thrownError;
@@ -36,9 +17,7 @@ test('Should throw error when no key is configured', () => {
 });
 
 test('Request OK when everything is set up correctly', async () => {
-    mockFetch(200, mocks);
-
-    AbstractIpGeolocation.configure('API_KEY');
+    AbstractIpGeolocation.configure(API_KEY);
     let response = await AbstractIpGeolocation.look_up('166.171.248.255')
     expect(response.ip_address).toBe('166.171.248.255')
 });
