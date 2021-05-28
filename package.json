@@ -1,6 +1,6 @@
 {
   "name": "@abstractapi/javascript-ip-geolocation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AbstractAPI Javascript IP Geolocation Library - Wrapper to quickly start using the powerful AbstractAPI's IP Geolocation service in your projects.",
   "main": "index.js",
   "scripts": {
